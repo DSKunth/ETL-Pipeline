@@ -6,7 +6,7 @@ from src.load_data_to_s3 import df_to_s3
 
 
 # from dotenv import load_dotenv
-# load_env() # only for local
+# load_dotenv() # only for local testing
 
 
 # import variables from .env file
