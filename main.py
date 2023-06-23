@@ -1,15 +1,17 @@
+# provides ways to access the Operating System and allows us to read the environment variables
 import os
+
 from datetime import datetime
 from src.extract import extract_transaction_data
 from src.transform import identify_and_remove_duplicated_data
 from src.load_data_to_s3 import df_to_s3
 
+# import the load_dotenv from the python-dotenv module
+from dotenv import load_dotenv
+load_dotenv() # take environment variables from .env only for local testing
 
-# from dotenv import load_dotenv
-# load_dotenv() # only for local testing
 
-
-# import variables from .env file
+# import environment variables from .env file
 dbname = os.getenv("dbname")
 host = os.getenv("host")
 port = os.getenv("port")
