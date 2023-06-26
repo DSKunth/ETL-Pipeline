@@ -7,8 +7,8 @@ from src.transform import identify_and_remove_duplicated_data
 from src.load_data_to_s3 import df_to_s3
 
 # import the load_dotenv from the python-dotenv module
-# from dotenv import load_dotenv
-# load_dotenv() # take environment variables from .env only for local testing
+from dotenv import load_dotenv
+load_dotenv() # take environment variables from .env only for local testing
 
 
 # import environment variables from .env file
